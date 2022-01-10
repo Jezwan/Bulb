@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>BULB ON AND OFF</title>
+        <script>
+            function bulb(status){
+                var pic;
+                if (status==true){
+                    pic = "bulbon.jpeg";
+                }
+                else {
+                    pic = "bulboff.jpeg";
+                }
+                document.getElementById('bulb').src = pic;
+            }
+        </script>
+    </head>
+
+    <body bgcolor="black">
+        <center>
+        <img id="bulb" src="bulboff.jpeg" width="200px" height="auto">
+        <h4>
+            <button type="button" onclick="bulb(true)">ON</button>
+            <button type="button" onclick="bulb(false)">OFF</button>
+        </h4>
+        </center>
+    </body>
+</html>
